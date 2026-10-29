@@ -13,8 +13,9 @@ import {
   ArrowRight,
   ShieldAlert,
 } from 'lucide-react';
+import { getPublicApiUrl } from '../../lib/api';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/api/v1';
+const API_URL = getPublicApiUrl();
 
 export default function AdminDashboardPage() {
   const [stats, setStats] = useState<any>(null);

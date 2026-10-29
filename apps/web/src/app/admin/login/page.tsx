@@ -4,8 +4,9 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Compass, Shield, Lock, Mail, AlertCircle, ArrowLeft } from 'lucide-react';
+import { getPublicApiUrl } from '../../../lib/api';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/api/v1';
+const API_URL = getPublicApiUrl();
 
 export default function AdminLoginPage() {
   const [email, setEmail] = useState('admin@travelbharat.in');

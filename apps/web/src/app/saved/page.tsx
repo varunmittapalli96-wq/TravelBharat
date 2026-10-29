@@ -7,8 +7,9 @@ import { PlaceCard } from '../../components/places/PlaceCard';
 import { useSavedPlaces } from '../../hooks/useSavedPlaces';
 import Link from 'next/link';
 import { Bookmark, Compass, ArrowRight } from 'lucide-react';
+import { getPublicApiUrl } from '../../lib/api';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/api/v1';
+const API_URL = getPublicApiUrl();
 
 export default function SavedPlacesPage() {
   const { savedSlugs, isLoaded } = useSavedPlaces();

@@ -4,8 +4,9 @@ import { useState } from 'react';
 import { Header } from '../../components/layout/Header';
 import { Footer } from '../../components/layout/Footer';
 import { Mail, MessageSquare, Send, CheckCircle2, AlertCircle } from 'lucide-react';
+import { getPublicApiUrl } from '../../lib/api';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/api/v1';
+const API_URL = getPublicApiUrl();
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({

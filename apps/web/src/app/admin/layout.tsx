@@ -16,8 +16,9 @@ import {
   Menu,
   X,
 } from 'lucide-react';
+import { getPublicApiUrl } from '../../lib/api';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/api/v1';
+const API_URL = getPublicApiUrl();
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const [currentUser, setCurrentUser] = useState<any>(null);

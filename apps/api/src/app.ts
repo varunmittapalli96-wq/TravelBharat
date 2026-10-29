@@ -55,6 +55,20 @@ export function createApp() {
     res.json({ status: 'ok', timestamp: new Date().toISOString() });
   });
 
+  // Root endpoint
+  app.get('/', (_req, res) => {
+    res.json({
+      name: 'TravelBharat API',
+      version: '1.0.0',
+      status: 'healthy',
+      endpoints: {
+        health: '/health',
+        docs: '/api/docs',
+        v1: '/api/v1',
+      },
+    });
+  });
+
   // API routes
   app.use('/api/v1', createPublicRoutes());
   app.use('/api/v1/admin', createAdminRoutes());
