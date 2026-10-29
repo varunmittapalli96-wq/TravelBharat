@@ -37,3 +37,4 @@ export async function serverFetch<T>(path: string, init?: RequestInit): Promise<
 
   return null;
 }
+
