@@ -4,10 +4,9 @@ import { PlaceCard } from '../../components/places/PlaceCard';
 import { StateFilter } from '../../components/explore/StateFilter';
 import Link from 'next/link';
 import { Search, Filter, Award, Sparkles, MapPin, X } from 'lucide-react';
+import { serverFetch } from '../../lib/server-api';
 
 export const dynamic = 'force-dynamic';
-
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/api/v1';
 
 interface SearchParams {
   q?: string;
@@ -22,7 +21,6 @@ interface SearchParams {
 }
 
 async function getPlaces(params: SearchParams) {
-  let url = `${API_URL}/places`;
   const sp = new URLSearchParams();
 
   if (params.q) sp.set('q', params.q);
@@ -36,26 +34,21 @@ async function getPlaces(params: SearchParams) {
   sp.set('limit', '30');
 
   const qs = sp.toString();
-  if (qs) url += `?${qs}`;
+  const path = `/places${qs ? `?${qs}` : ''}`;
 
-  try {
-    const res = await fetch(url, { signal: AbortSignal.timeout(3000), next: { revalidate: 30 } });
-    if (!res.ok) return { data: [], meta: { total: 0 } };
-    return await res.json();
-  } catch {
-    return { data: [], meta: { total: 0 } };
+  const res = await serverFetch<any>(path, { next: { revalidate: 30 } });
+  if (res && res.data) {
+    return res;
   }
+  if (Array.isArray(res)) {
+    return { data: res, meta: { total: res.length } };
+  }
+  return { data: [], meta: { total: 0 } };
 }
 
 async function getStates() {
-  try {
-    const res = await fetch(`${API_URL}/states`, { signal: AbortSignal.timeout(3000), next: { revalidate: 120 } });
-    if (!res.ok) return [];
-    const json = await res.json();
-    return json.data || [];
-  } catch {
-    return [];
-  }
+  const data = await serverFetch<any[]>('/states', { next: { revalidate: 120 } });
+  return data || [];
 }
 
 export const metadata = {

@@ -4,29 +4,17 @@ import { PlaceCard } from '../../../components/places/PlaceCard';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { MapPin, Building, ChevronRight, Compass } from 'lucide-react';
+import { serverFetch } from '../../../lib/server-api';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/api/v1';
+export const dynamic = 'force-dynamic';
 
 async function getCity(slug: string) {
-  try {
-    const res = await fetch(`${API_URL}/cities/${slug}`, { next: { revalidate: 60 } });
-    if (!res.ok) return null;
-    const json = await res.json();
-    return json.data;
-  } catch {
-    return null;
-  }
+  return await serverFetch<any>(`/cities/${slug}`, { next: { revalidate: 60 } });
 }
 
 async function getCityPlaces(cityId: string) {
-  try {
-    const res = await fetch(`${API_URL}/places?cityId=${cityId}&limit=50`, { next: { revalidate: 60 } });
-    if (!res.ok) return [];
-    const json = await res.json();
-    return json.data || [];
-  } catch {
-    return [];
-  }
+  const data = await serverFetch<any[]>(`/places?cityId=${cityId}&limit=50`, { next: { revalidate: 60 } });
+  return data || [];
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {

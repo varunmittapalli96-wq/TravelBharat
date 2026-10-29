@@ -1,8 +1,8 @@
 import { MetadataRoute } from 'next';
+import { serverFetch } from '../lib/server-api';
 
 export const dynamic = 'force-dynamic';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/api/v1';
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://travelbharat-web.onrender.com';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -16,13 +16,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ];
 
   try {
-    const [statesRes, placesRes] = await Promise.all([
-      fetch(`${API_URL}/states`, { signal: AbortSignal.timeout(3000) }).catch(() => null),
-      fetch(`${API_URL}/places?limit=100`, { signal: AbortSignal.timeout(3000) }).catch(() => null),
+    const [states, places] = await Promise.all([
+      serverFetch<any[]>('/states'),
+      serverFetch<any[]>('/places?limit=100'),
     ]);
 
-    if (statesRes && statesRes.ok) {
-      const states = (await statesRes.json()).data || [];
+    if (states && Array.isArray(states)) {
       for (const s of states) {
         routes.push({
           url: `${SITE_URL}/states/${s.slug}`,
@@ -32,8 +31,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       }
     }
 
-    if (placesRes && placesRes.ok) {
-      const places = (await placesRes.json()).data || [];
+    if (places && Array.isArray(places)) {
       for (const p of places) {
         routes.push({
           url: `${SITE_URL}/places/${p.slug}`,

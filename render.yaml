@@ -53,4 +53,6 @@ services:
         value: https://travelbharat-web.onrender.com
       - key: NEXT_PUBLIC_API_URL
         value: https://travelbharat-api.onrender.com/api/v1
+      - key: INTERNAL_API_URL
+        value: http://travelbharat-api:10000/api/v1
 

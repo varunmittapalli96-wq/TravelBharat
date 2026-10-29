@@ -8,26 +8,25 @@ import { MonthWidget } from '../components/home/MonthWidget';
 import { PlaceCard } from '../components/places/PlaceCard';
 import Link from 'next/link';
 import { Sparkles, ArrowRight } from 'lucide-react';
+import { serverFetch } from '../lib/server-api';
 
 export const dynamic = 'force-dynamic';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/api/v1';
-
 async function getData() {
   try {
-    const [statsRes, statesRes, featuredRes, unescoRes] = await Promise.all([
-      fetch(`${API_URL}/stats`, { cache: 'no-store', signal: AbortSignal.timeout(4000) }).catch(() => null),
-      fetch(`${API_URL}/states`, { cache: 'no-store', signal: AbortSignal.timeout(4000) }).catch(() => null),
-      fetch(`${API_URL}/places?sort=popular&limit=6`, { cache: 'no-store', signal: AbortSignal.timeout(4000) }).catch(() => null),
-      fetch(`${API_URL}/places?unesco=true&limit=6`, { cache: 'no-store', signal: AbortSignal.timeout(4000) }).catch(() => null),
+    const [stats, states, featuredPlaces, unescoPlaces] = await Promise.all([
+      serverFetch<any>('/stats', { cache: 'no-store' }),
+      serverFetch<any[]>('/states', { cache: 'no-store' }),
+      serverFetch<any[]>('/places?sort=popular&limit=6', { cache: 'no-store' }),
+      serverFetch<any[]>('/places?unesco=true&limit=6', { cache: 'no-store' }),
     ]);
 
-    const stats = statsRes && statsRes.ok ? (await statsRes.json()).data : null;
-    const states = statesRes && statesRes.ok ? (await statesRes.json()).data : [];
-    const featuredPlaces = featuredRes && featuredRes.ok ? (await featuredRes.json()).data : [];
-    const unescoPlaces = unescoRes && unescoRes.ok ? (await unescoRes.json()).data : [];
-
-    return { stats, states, featuredPlaces, unescoPlaces };
+    return {
+      stats: stats || null,
+      states: states || [],
+      featuredPlaces: featuredPlaces || [],
+      unescoPlaces: unescoPlaces || [],
+    };
   } catch (err) {
     console.error('Error fetching home data:', err);
     return { stats: null, states: [], featuredPlaces: [], unescoPlaces: [] };

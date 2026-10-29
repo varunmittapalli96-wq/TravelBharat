@@ -3,27 +3,19 @@ import { Footer } from '../../components/layout/Footer';
 import Link from 'next/link';
 import Image from 'next/image';
 import { MapPin, Building, Landmark, Compass, ArrowRight } from 'lucide-react';
+import { serverFetch } from '../../lib/server-api';
 
 export const dynamic = 'force-dynamic';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/api/v1';
-
 async function getStates(region?: string, type?: string) {
-  let url = `${API_URL}/states`;
   const params = new URLSearchParams();
   if (region) params.set('region', region);
   if (type) params.set('type', type);
   const qs = params.toString();
-  if (qs) url += `?${qs}`;
+  const path = `/states${qs ? `?${qs}` : ''}`;
 
-  try {
-    const res = await fetch(url, { signal: AbortSignal.timeout(3000), next: { revalidate: 60 } });
-    if (!res.ok) return [];
-    const data = await res.json();
-    return data.data || [];
-  } catch {
-    return [];
-  }
+  const data = await serverFetch<any[]>(path, { next: { revalidate: 60 } });
+  return data || [];
 }
 
 export const metadata = {
