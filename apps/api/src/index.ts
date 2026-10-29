@@ -1,4 +1,9 @@
-import 'dotenv/config';
+try {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  require('dotenv').config();
+} catch {
+  // Environment variables are provided directly by the platform in production
+}
 import { createApp, prisma } from './app';
 
 const PORT = parseInt(process.env.PORT || process.env.API_PORT || '4000');
