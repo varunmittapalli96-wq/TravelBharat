@@ -180,8 +180,8 @@ export function createPublicRoutes() {
     try {
       const { stateId, cityId, category, tags, month, q, unesco, freeEntry, sort, page, limit } = req.query as Record<string, string>;
 
-      const pageNum = parseInt(page) || 1;
-      const limitNum = parseInt(limit) || 20;
+      const pageNum = parseInt(page as string) || 1;
+      const limitNum = parseInt(limit as string) || 20;
 
       const where: Prisma.PlaceWhereInput = {
         status: 'VERIFIED',
@@ -190,9 +190,9 @@ export function createPublicRoutes() {
 
       if (stateId) where.stateId = stateId;
       if (cityId) where.cityId = cityId;
-      if (category) where.category = category as Prisma.EnumCategoryTypeFilter['equals'];
-      if (tags) where.tags = { hasSome: tags.split(',') as Prisma.EnumTagTypeFilter['hasSome'] };
-      if (month) where.bestMonths = { has: parseInt(month) };
+      if (category) where.category = category as any;
+      if (tags) where.tags = { hasSome: tags.split(',') as any };
+      if (month) where.bestMonths = { has: parseInt(month as string) };
       if (q) {
         where.OR = [
           { name: { contains: q, mode: 'insensitive' } },
@@ -200,8 +200,8 @@ export function createPublicRoutes() {
           { description: { contains: q, mode: 'insensitive' } },
         ];
       }
-      if (unesco === true || unesco === 'true') where.isUnesco = true;
-      if (freeEntry === true || freeEntry === 'true') where.entryFee = null;
+      if (unesco === 'true') where.isUnesco = true;
+      if (freeEntry === 'true') where.entryFee = null;
 
       let orderBy: Prisma.PlaceOrderByWithRelationInput = { name: 'asc' };
       if (sort === 'newest') orderBy = { createdAt: 'desc' };

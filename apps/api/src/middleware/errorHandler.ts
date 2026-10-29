@@ -25,8 +25,8 @@ export function errorHandler(
     error: {
       code,
       message,
-      ...(process.env.NODE_ENV === 'development' && { stack: err.stack }),
-      ...(err.details && { details: err.details }),
+      ...(process.env.NODE_ENV === 'development' ? { stack: err.stack } : {}),
+      ...(err.details ? { details: err.details } : {}),
     },
   });
 }

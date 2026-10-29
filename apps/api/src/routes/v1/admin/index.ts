@@ -59,8 +59,8 @@ export function createAdminRoutes() {
 
       const token = jwt.sign(
         { userId: user.id, role: user.role },
-        secret,
-        { expiresIn: process.env.JWT_EXPIRES_IN || '7d' }
+        secret as jwt.Secret,
+        { expiresIn: (process.env.JWT_EXPIRES_IN || '7d') as any }
       );
 
       res.cookie('token', token, {
@@ -195,9 +195,9 @@ export function createAdminRoutes() {
 
   router.delete('/states/:id', requireRole('ADMIN'), async (req: Request, res: Response, next: NextFunction) => {
     try {
-      await prisma.state.delete({ where: { id: req.params.id } });
+      await prisma.state.delete({ where: { id: req.params.id as string } });
       await prisma.auditLog.create({
-        data: { userId: req.user!.id, action: 'DELETE', entity: 'State', entityId: req.params.id },
+        data: { userId: req.user!.id, action: 'DELETE', entity: 'State', entityId: req.params.id as string },
       });
       sendSuccess(res, { data: { deleted: true } });
     } catch (error) {
@@ -251,9 +251,9 @@ export function createAdminRoutes() {
 
   router.delete('/cities/:id', requireRole('ADMIN'), async (req: Request, res: Response, next: NextFunction) => {
     try {
-      await prisma.city.delete({ where: { id: req.params.id } });
+      await prisma.city.delete({ where: { id: req.params.id as string } });
       await prisma.auditLog.create({
-        data: { userId: req.user!.id, action: 'DELETE', entity: 'City', entityId: req.params.id },
+        data: { userId: req.user!.id, action: 'DELETE', entity: 'City', entityId: req.params.id as string },
       });
       sendSuccess(res, { data: { deleted: true } });
     } catch (error) {
@@ -375,10 +375,10 @@ export function createAdminRoutes() {
   router.post('/places/:id/images', requireRole('ADMIN', 'EDITOR'), validate(createImageSchema), async (req: Request, res: Response, next: NextFunction) => {
     try {
       const image = await prisma.placeImage.create({
-        data: { ...req.body, placeId: req.params.id },
+        data: { ...req.body, placeId: req.params.id as string },
       });
       await prisma.auditLog.create({
-        data: { userId: req.user!.id, action: 'ADD_IMAGE', entity: 'Place', entityId: req.params.id, diff: { imageId: image.id } },
+        data: { userId: req.user!.id, action: 'ADD_IMAGE', entity: 'Place', entityId: req.params.id as string, diff: { imageId: image.id } },
       });
       sendSuccess(res, { data: image, statusCode: 201 });
     } catch (error) {
@@ -401,9 +401,9 @@ export function createAdminRoutes() {
 
   router.delete('/images/:id', requireRole('ADMIN', 'EDITOR'), async (req: Request, res: Response, next: NextFunction) => {
     try {
-      await prisma.placeImage.delete({ where: { id: req.params.id } });
+      await prisma.placeImage.delete({ where: { id: req.params.id as string } });
       await prisma.auditLog.create({
-        data: { userId: req.user!.id, action: 'DELETE_IMAGE', entity: 'PlaceImage', entityId: req.params.id },
+        data: { userId: req.user!.id, action: 'DELETE_IMAGE', entity: 'PlaceImage', entityId: req.params.id as string },
       });
       sendSuccess(res, { data: { deleted: true } });
     } catch (error) {

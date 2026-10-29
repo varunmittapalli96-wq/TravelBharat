@@ -1,6 +1,6 @@
 import { createApp, prisma } from './app';
 
-const PORT = parseInt(process.env.API_PORT || '4000');
+const PORT = parseInt(process.env.PORT || process.env.API_PORT || '4000');
 
 async function main() {
   const app = createApp();

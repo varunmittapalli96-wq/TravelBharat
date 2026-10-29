@@ -21,11 +21,20 @@ export function createApp() {
   }));
 
   // CORS
-  const allowedOrigins = (process.env.CORS_ORIGINS || 'http://localhost:3000').split(',');
-  app.use(cors({
-    origin: allowedOrigins,
-    credentials: true,
-  }));
+  const corsOriginsEnv = process.env.CORS_ORIGINS;
+  const originSetting =
+    corsOriginsEnv === '*'
+      ? true
+      : corsOriginsEnv
+      ? corsOriginsEnv.split(',').map((s) => s.trim())
+      : ['http://localhost:3000'];
+
+  app.use(
+    cors({
+      origin: originSetting,
+      credentials: true,
+    })
+  );
 
   // Body parsing
   app.use(express.json({ limit: '10mb' }));
