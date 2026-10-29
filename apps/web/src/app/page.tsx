@@ -9,21 +9,23 @@ import { PlaceCard } from '../components/places/PlaceCard';
 import Link from 'next/link';
 import { Sparkles, ArrowRight } from 'lucide-react';
 
+export const dynamic = 'force-dynamic';
+
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/api/v1';
 
 async function getData() {
   try {
     const [statsRes, statesRes, featuredRes, unescoRes] = await Promise.all([
-      fetch(`${API_URL}/stats`, { cache: 'no-store' }),
-      fetch(`${API_URL}/states`, { cache: 'no-store' }),
-      fetch(`${API_URL}/places?sort=popular&limit=6`, { cache: 'no-store' }),
-      fetch(`${API_URL}/places?unesco=true&limit=6`, { cache: 'no-store' }),
+      fetch(`${API_URL}/stats`, { cache: 'no-store', signal: AbortSignal.timeout(4000) }).catch(() => null),
+      fetch(`${API_URL}/states`, { cache: 'no-store', signal: AbortSignal.timeout(4000) }).catch(() => null),
+      fetch(`${API_URL}/places?sort=popular&limit=6`, { cache: 'no-store', signal: AbortSignal.timeout(4000) }).catch(() => null),
+      fetch(`${API_URL}/places?unesco=true&limit=6`, { cache: 'no-store', signal: AbortSignal.timeout(4000) }).catch(() => null),
     ]);
 
-    const stats = statsRes.ok ? (await statsRes.json()).data : null;
-    const states = statesRes.ok ? (await statesRes.json()).data : [];
-    const featuredPlaces = featuredRes.ok ? (await featuredRes.json()).data : [];
-    const unescoPlaces = unescoRes.ok ? (await unescoRes.json()).data : [];
+    const stats = statsRes && statsRes.ok ? (await statsRes.json()).data : null;
+    const states = statesRes && statesRes.ok ? (await statesRes.json()).data : [];
+    const featuredPlaces = featuredRes && featuredRes.ok ? (await featuredRes.json()).data : [];
+    const unescoPlaces = unescoRes && unescoRes.ok ? (await unescoRes.json()).data : [];
 
     return { stats, states, featuredPlaces, unescoPlaces };
   } catch (err) {

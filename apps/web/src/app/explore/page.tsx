@@ -5,6 +5,8 @@ import { StateFilter } from '../../components/explore/StateFilter';
 import Link from 'next/link';
 import { Search, Filter, Award, Sparkles, MapPin, X } from 'lucide-react';
 
+export const dynamic = 'force-dynamic';
+
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/api/v1';
 
 interface SearchParams {
@@ -37,7 +39,7 @@ async function getPlaces(params: SearchParams) {
   if (qs) url += `?${qs}`;
 
   try {
-    const res = await fetch(url, { next: { revalidate: 30 } });
+    const res = await fetch(url, { signal: AbortSignal.timeout(3000), next: { revalidate: 30 } });
     if (!res.ok) return { data: [], meta: { total: 0 } };
     return await res.json();
   } catch {
@@ -47,7 +49,7 @@ async function getPlaces(params: SearchParams) {
 
 async function getStates() {
   try {
-    const res = await fetch(`${API_URL}/states`, { next: { revalidate: 120 } });
+    const res = await fetch(`${API_URL}/states`, { signal: AbortSignal.timeout(3000), next: { revalidate: 120 } });
     if (!res.ok) return [];
     const json = await res.json();
     return json.data || [];

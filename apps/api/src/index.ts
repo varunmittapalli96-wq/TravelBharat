@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { createApp, prisma } from './app';
 
 const PORT = parseInt(process.env.PORT || process.env.API_PORT || '4000');
@@ -9,8 +10,8 @@ async function main() {
   await prisma.$connect();
   console.log('✅ Database connected');
 
-  app.listen(PORT, () => {
-    console.log(`🚀 TravelBharat API running on http://localhost:${PORT}`);
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`🚀 TravelBharat API running on http://0.0.0.0:${PORT}`);
     console.log(`📚 API Docs at http://localhost:${PORT}/api/docs`);
   });
 }

@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { MapPin, Building, Landmark, Compass, ArrowRight } from 'lucide-react';
 
+export const dynamic = 'force-dynamic';
+
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/api/v1';
 
 async function getStates(region?: string, type?: string) {
@@ -15,7 +17,7 @@ async function getStates(region?: string, type?: string) {
   if (qs) url += `?${qs}`;
 
   try {
-    const res = await fetch(url, { next: { revalidate: 60 } });
+    const res = await fetch(url, { signal: AbortSignal.timeout(3000), next: { revalidate: 60 } });
     if (!res.ok) return [];
     const data = await res.json();
     return data.data || [];

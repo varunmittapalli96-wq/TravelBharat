@@ -6,11 +6,13 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { MapPin, Building, Landmark, Compass, ChevronRight, Share2 } from 'lucide-react';
 
+export const dynamic = 'force-dynamic';
+
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/api/v1';
 
 async function getState(slug: string) {
   try {
-    const res = await fetch(`${API_URL}/states/${slug}`, { next: { revalidate: 60 } });
+    const res = await fetch(`${API_URL}/states/${slug}`, { signal: AbortSignal.timeout(3000), next: { revalidate: 60 } });
     if (!res.ok) return null;
     const json = await res.json();
     return json.data;
@@ -21,7 +23,7 @@ async function getState(slug: string) {
 
 async function getStatePlaces(stateId: string) {
   try {
-    const res = await fetch(`${API_URL}/places?stateId=${stateId}&limit=50`, { next: { revalidate: 60 } });
+    const res = await fetch(`${API_URL}/places?stateId=${stateId}&limit=50`, { signal: AbortSignal.timeout(3000), next: { revalidate: 60 } });
     if (!res.ok) return [];
     const json = await res.json();
     return json.data || [];

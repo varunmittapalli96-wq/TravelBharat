@@ -1,7 +1,9 @@
 import { MetadataRoute } from 'next';
 
+export const dynamic = 'force-dynamic';
+
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/api/v1';
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://travelbharat-web.onrender.com';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const routes: MetadataRoute.Sitemap = [
@@ -15,11 +17,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   try {
     const [statesRes, placesRes] = await Promise.all([
-      fetch(`${API_URL}/states`),
-      fetch(`${API_URL}/places?limit=100`),
+      fetch(`${API_URL}/states`, { signal: AbortSignal.timeout(3000) }).catch(() => null),
+      fetch(`${API_URL}/places?limit=100`, { signal: AbortSignal.timeout(3000) }).catch(() => null),
     ]);
 
-    if (statesRes.ok) {
+    if (statesRes && statesRes.ok) {
       const states = (await statesRes.json()).data || [];
       for (const s of states) {
         routes.push({
@@ -30,7 +32,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       }
     }
 
-    if (placesRes.ok) {
+    if (placesRes && placesRes.ok) {
       const places = (await placesRes.json()).data || [];
       for (const p of places) {
         routes.push({
@@ -41,7 +43,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       }
     }
   } catch (err) {
-    console.error('Error generating sitemap', err);
+    console.warn('Notice: sitemap dynamic routes fetch skipped or timed out:', err);
   }
 
   return routes;
