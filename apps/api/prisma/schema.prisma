@@ -1,0 +1,211 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["fullTextSearch"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum StateType {
+  STATE
+  UT
+}
+
+enum Region {
+  NORTH
+  SOUTH
+  EAST
+  WEST
+  CENTRAL
+  NORTHEAST
+}
+
+enum CategoryType {
+  HERITAGE
+  NATURE
+  RELIGIOUS
+  ADVENTURE
+}
+
+enum TagType {
+  BEACH
+  HILL_STATION
+  WILDLIFE
+  CULTURAL
+  HIDDEN_GEM
+}
+
+enum PlaceStatus {
+  DRAFT
+  IN_REVIEW
+  VERIFIED
+}
+
+enum AdminRole {
+  ADMIN
+  EDITOR
+}
+
+model State {
+  id          String    @id @default(cuid())
+  name        String    @unique
+  slug        String    @unique
+  type        StateType
+  capital     String
+  region      Region
+  description String    @db.Text
+  bannerImage String
+  svgMapId    String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  cities City[]
+  places Place[]
+
+  @@index([slug])
+  @@index([region])
+}
+
+model City {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  stateId     String
+  description String   @db.Text
+  lat         Float
+  lng         Float
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  state  State   @relation(fields: [stateId], references: [id], onDelete: Cascade)
+  places Place[]
+
+  @@index([slug])
+  @@index([stateId])
+}
+
+model Place {
+  id                     String       @id @default(cuid())
+  name                   String
+  slug                   String       @unique
+  stateId                String
+  cityId                 String?
+  category               CategoryType
+  tags                   TagType[]
+  shortDescription       String       @db.VarChar(300)
+  description            String       @db.Text
+  historicalSignificance String?      @db.Text
+  bestTimeToVisit        String
+  bestMonths             Int[]
+  entryFee               String?
+  timings                String?
+  mapLink                String?
+  lat                    Float
+  lng                    Float
+  howToReachAirport      String?
+  howToReachRailway      String?
+  howToReachRoad         String?
+  localTips              String[]
+  isUnesco               Boolean      @default(false)
+  isFeatured             Boolean      @default(false)
+  status                 PlaceStatus  @default(DRAFT)
+  sources                Json         @default("[]")
+  verifiedBy             String?
+  verifiedAt             DateTime?
+  createdAt              DateTime     @default(now())
+  updatedAt              DateTime     @updatedAt
+  deletedAt              DateTime?
+
+  state  State        @relation(fields: [stateId], references: [id], onDelete: Cascade)
+  city   City?        @relation(fields: [cityId], references: [id], onDelete: SetNull)
+  images PlaceImage[]
+
+  nearbyFrom NearbyPlace[] @relation("FromPlace")
+  nearbyTo   NearbyPlace[] @relation("ToPlace")
+
+  @@index([slug])
+  @@index([stateId])
+  @@index([cityId])
+  @@index([category])
+  @@index([status])
+  @@index([isFeatured])
+  @@index([isUnesco])
+}
+
+model PlaceImage {
+  id        String  @id @default(cuid())
+  placeId   String
+  url       String
+  alt       String
+  caption   String?
+  credit    String
+  license   String
+  sourceUrl String?
+  isCover   Boolean @default(false)
+  order     Int     @default(0)
+
+  place Place @relation(fields: [placeId], references: [id], onDelete: Cascade)
+
+  @@index([placeId])
+}
+
+model NearbyPlace {
+  placeId       String
+  nearbyPlaceId String
+  distanceKm    Float
+
+  place       Place @relation("FromPlace", fields: [placeId], references: [id], onDelete: Cascade)
+  nearbyPlace Place @relation("ToPlace", fields: [nearbyPlaceId], references: [id], onDelete: Cascade)
+
+  @@id([placeId, nearbyPlaceId])
+}
+
+model AdminUser {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  passwordHash String
+  role         AdminRole @default(EDITOR)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  auditLogs AuditLog[]
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  userId    String
+  action    String
+  entity    String
+  entityId  String
+  diff      Json?
+  createdAt DateTime @default(now())
+
+  user AdminUser @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+  @@index([entity, entityId])
+  @@index([createdAt])
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  subject   String
+  message   String   @db.Text
+  createdAt DateTime @default(now())
+}
+
+model AnalyticsEvent {
+  id        String   @id @default(cuid())
+  event     String
+  page      String?
+  data      Json?
+  sessionId String?
+  createdAt DateTime @default(now())
+
+  @@index([event])
+  @@index([createdAt])
+}

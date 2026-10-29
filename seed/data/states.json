@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Andhra Pradesh",
+    "slug": "andhra-pradesh",
+    "type": "STATE",
+    "capital": "Amaravati",
+    "region": "SOUTH",
+    "description": "Andhra Pradesh, situated in southeastern India, is renowned for its rich cultural heritage, ancient temples like Tirumala Venkateswara Temple, the historic Charminar legacy, pristine beaches along its 974 km coastline, and the scenic Eastern Ghats. The state is known as the 'Rice Bowl of India'.",
+    "bannerImage": "/images/states/andhra-pradesh.jpg",
+    "svgMapId": "IN-AP"
+  },
+  {
+    "name": "Arunachal Pradesh",
+    "slug": "arunachal-pradesh",
+    "type": "STATE",
+    "capital": "Itanagar",
+    "region": "NORTHEAST",
+    "description": "Arunachal Pradesh, the 'Land of the Dawn-Lit Mountains', is India's northeasternmost state. Home to 26 major tribes and over 100 sub-tribes, it offers pristine landscapes, snow-capped peaks, ancient Buddhist monasteries like Tawang, and some of India's last remaining virgin forests.",
+    "bannerImage": "/images/states/arunachal-pradesh.jpg",
+    "svgMapId": "IN-AR"
+  },
+  {
+    "name": "Assam",
+    "slug": "assam",
+    "type": "STATE",
+    "capital": "Dispur",
+    "region": "NORTHEAST",
+    "description": "Assam, the gateway to Northeast India, is famed for its world-renowned tea gardens, the mighty Brahmaputra River, Kaziranga National Park with its one-horned rhinoceros, ancient Ahom-era monuments, and the vibrant Bihu festival. The state is a biodiversity hotspot.",
+    "bannerImage": "/images/states/assam.jpg",
+    "svgMapId": "IN-AS"
+  },
+  {
+    "name": "Bihar",
+    "slug": "bihar",
+    "type": "STATE",
+    "capital": "Patna",
+    "region": "EAST",
+    "description": "Bihar, one of India's oldest inhabited regions, is the birthplace of Buddhism and Jainism. Home to the ancient Nalanda University ruins, Bodh Gaya where Buddha attained enlightenment, Mahabodhi Temple (UNESCO site), and the Sikh holy site Takht Sri Patna Sahib.",
+    "bannerImage": "/images/states/bihar.jpg",
+    "svgMapId": "IN-BR"
+  },
+  {
+    "name": "Chhattisgarh",
+    "slug": "chhattisgarh",
+    "type": "STATE",
+    "capital": "Raipur",
+    "region": "CENTRAL",
+    "description": "Chhattisgarh, often called 'the heart of India', is known for its dense forests covering 44% of the state, rich tribal culture, ancient cave paintings, stunning waterfalls like Chitrakote Falls (the Niagara of India), and unique temple architecture at Bhoramdeo.",
+    "bannerImage": "/images/states/chhattisgarh.jpg",
+    "svgMapId": "IN-CT"
+  },
+  {
+    "name": "Goa",
+    "slug": "goa",
+    "type": "STATE",
+    "capital": "Panaji",
+    "region": "WEST",
+    "description": "Goa, India's smallest state by area, is world-famous for its stunning beaches, Portuguese colonial architecture, vibrant nightlife, ancient churches and convents (UNESCO World Heritage), spice plantations, and unique Indo-Portuguese cuisine blending Indian and European flavors.",
+    "bannerImage": "/images/states/goa.jpg",
+    "svgMapId": "IN-GA"
+  },
+  {
+    "name": "Gujarat",
+    "slug": "gujarat",
+    "type": "STATE",
+    "capital": "Gandhinagar",
+    "region": "WEST",
+    "description": "Gujarat, the westernmost state of India, is the birthplace of Mahatma Gandhi and the Indus Valley Civilization site of Lothal. It features the white desert of Rann of Kutch, the only habitat of Asiatic lions in Gir Forest, the ancient stepwells of Patan, and the Statue of Unity.",
+    "bannerImage": "/images/states/gujarat.jpg",
+    "svgMapId": "IN-GJ"
+  },
+  {
+    "name": "Haryana",
+    "slug": "haryana",
+    "type": "STATE",
+    "capital": "Chandigarh",
+    "region": "NORTH",
+    "description": "Haryana, surrounding Delhi on three sides, is steeped in mythological and historical significance. The land of the Mahabharata's Kurukshetra, it features ancient sites like Pinjore Gardens, Sultanpur National Park for birdwatching, and the planned city of Chandigarh designed by Le Corbusier.",
+    "bannerImage": "/images/states/haryana.jpg",
+    "svgMapId": "IN-HR"
+  },
+  {
+    "name": "Himachal Pradesh",
+    "slug": "himachal-pradesh",
+    "type": "STATE",
+    "capital": "Shimla",
+    "region": "NORTH",
+    "description": "Himachal Pradesh, 'Land of the Snow', is a Himalayan state known for its scenic mountain towns like Shimla, Manali, and Dharamshala (home of the Dalai Lama). It features ancient wooden temples, apple orchards, adventure sports, and the famous Rohtang Pass.",
+    "bannerImage": "/images/states/himachal-pradesh.jpg",
+    "svgMapId": "IN-HP"
+  },
+  {
+    "name": "Jharkhand",
+    "slug": "jharkhand",
+    "type": "STATE",
+    "capital": "Ranchi",
+    "region": "EAST",
+    "description": "Jharkhand, the 'Land of Forests', is known for its rich mineral resources, dense sal forests, stunning waterfalls like Hundru Falls, the unique Parasnath Jain pilgrimage site, tribal culture, and the historic Baidyanath Dham temple, one of the twelve Jyotirlingas.",
+    "bannerImage": "/images/states/jharkhand.jpg",
+    "svgMapId": "IN-JH"
+  },
+  {
+    "name": "Karnataka",
+    "slug": "karnataka",
+    "type": "STATE",
+    "capital": "Bengaluru",
+    "region": "SOUTH",
+    "description": "Karnataka is home to the ruins of Hampi (UNESCO), the royal city of Mysore, the temple town of Belur-Halebidu with Hoysala architecture, the Western Ghats biodiversity hotspot, Coorg's coffee plantations, and Bengaluru, India's Silicon Valley. The state has the most UNESCO sites in India.",
+    "bannerImage": "/images/states/karnataka.jpg",
+    "svgMapId": "IN-KA"
+  },
+  {
+    "name": "Kerala",
+    "slug": "kerala",
+    "type": "STATE",
+    "capital": "Thiruvananthapuram",
+    "region": "SOUTH",
+    "description": "Kerala, 'God's Own Country', is renowned for its serene backwaters, lush Western Ghats hill stations like Munnar, Ayurvedic traditions, pristine beaches, wildlife sanctuaries like Periyar, unique houseboat experiences, and the vibrant Kathakali dance form. It has near-100% literacy.",
+    "bannerImage": "/images/states/kerala.jpg",
+    "svgMapId": "IN-KL"
+  },
+  {
+    "name": "Madhya Pradesh",
+    "slug": "madhya-pradesh",
+    "type": "STATE",
+    "capital": "Bhopal",
+    "region": "CENTRAL",
+    "description": "Madhya Pradesh, the 'Heart of India', boasts more national parks than any other state and three UNESCO World Heritage Sites: Khajuraho temples, Sanchi Stupa, and Bhimbetka rock shelters. It features tiger reserves at Kanha and Bandhavgarh, and the historic city of Gwalior.",
+    "bannerImage": "/images/states/madhya-pradesh.jpg",
+    "svgMapId": "IN-MP"
+  },
+  {
+    "name": "Maharashtra",
+    "slug": "maharashtra",
+    "type": "STATE",
+    "capital": "Mumbai",
+    "region": "WEST",
+    "description": "Maharashtra, India's most industrialized state, features the vibrant megacity Mumbai, the UNESCO-listed Ajanta and Ellora Caves, the hill forts of the Maratha Empire, the sacred Shirdi Sai Baba temple, scenic Sahyadri mountains, and the famous Konkan coast.",
+    "bannerImage": "/images/states/maharashtra.jpg",
+    "svgMapId": "IN-MH"
+  },
+  {
+    "name": "Manipur",
+    "slug": "manipur",
+    "type": "STATE",
+    "capital": "Imphal",
+    "region": "NORTHEAST",
+    "description": "Manipur, the 'Jewel of India', is known for Loktak Lake (the only floating lake with phumdis), the INA Memorial, the Sangai deer (dancing deer found only here), the ancient Kangla Fort, and rich classical dance traditions including Manipuri dance.",
+    "bannerImage": "/images/states/manipur.jpg",
+    "svgMapId": "IN-MN"
+  },
+  {
+    "name": "Meghalaya",
+    "slug": "meghalaya",
+    "type": "STATE",
+    "capital": "Shillong",
+    "region": "NORTHEAST",
+    "description": "Meghalaya, the 'Abode of Clouds', receives some of the world's highest rainfall. It is famous for its living root bridges (unique bioengineering by the Khasi and Jaintia tribes), the cleanest village in Asia (Mawlynnong), Cherrapunji/Mawsynram, stunning waterfalls, and limestone caves.",
+    "bannerImage": "/images/states/meghalaya.jpg",
+    "svgMapId": "IN-ML"
+  },
+  {
+    "name": "Mizoram",
+    "slug": "mizoram",
+    "type": "STATE",
+    "capital": "Aizawl",
+    "region": "NORTHEAST",
+    "description": "Mizoram, the 'Land of the Hill People', is characterized by its rolling bamboo-covered hills, the unique Phawngpui (Blue Mountain), Tam Dil lake, and vibrant Mizo culture. With over 90% forest cover and near-100% literacy, it is one of India's most peaceful and green states.",
+    "bannerImage": "/images/states/mizoram.jpg",
+    "svgMapId": "IN-MZ"
+  },
+  {
+    "name": "Nagaland",
+    "slug": "nagaland",
+    "type": "STATE",
+    "capital": "Kohima",
+    "region": "NORTHEAST",
+    "description": "Nagaland, the 'Land of Festivals', is home to 16 major Naga tribes each with distinct traditions. Famous for the Hornbill Festival, Dzukou Valley with its seasonal flowers, Kohima War Cemetery, and Japfu Peak. The state offers some of India's most authentic tribal cultural experiences.",
+    "bannerImage": "/images/states/nagaland.jpg",
+    "svgMapId": "IN-NL"
+  },
+  {
+    "name": "Odisha",
+    "slug": "odisha",
+    "type": "STATE",
+    "capital": "Bhubaneswar",
+    "region": "EAST",
+    "description": "Odisha (formerly Orissa) is famed for the Sun Temple at Konark (UNESCO), Jagannath Temple in Puri, the ancient Buddhist site of Dhauli, Chilika Lake (Asia's largest brackish water lagoon), and Odissi dance. Bhubaneswar is known as the 'Temple City of India'.",
+    "bannerImage": "/images/states/odisha.jpg",
+    "svgMapId": "IN-OR"
+  },
+  {
+    "name": "Punjab",
+    "slug": "punjab",
+    "type": "STATE",
+    "capital": "Chandigarh",
+    "region": "NORTH",
+    "description": "Punjab, the 'Land of Five Rivers', is the spiritual home of Sikhism. The Golden Temple (Harmandir Sahib) in Amritsar is the most visited religious place globally. Punjab offers the Wagah Border ceremony, Partition Museum, vibrant Bhangra culture, and legendary Punjabi cuisine.",
+    "bannerImage": "/images/states/punjab.jpg",
+    "svgMapId": "IN-PB"
+  },
+  {
+    "name": "Rajasthan",
+    "slug": "rajasthan",
+    "type": "STATE",
+    "capital": "Jaipur",
+    "region": "NORTH",
+    "description": "Rajasthan, the 'Land of Kings', is India's largest state and a treasure trove of majestic forts, opulent palaces, vibrant desert culture, and colorful festivals. From the pink city of Jaipur to the blue city of Jodhpur, the golden city of Jaisalmer, and the lake city of Udaipur.",
+    "bannerImage": "/images/states/rajasthan.jpg",
+    "svgMapId": "IN-RJ"
+  },
+  {
+    "name": "Sikkim",
+    "slug": "sikkim",
+    "type": "STATE",
+    "capital": "Gangtok",
+    "region": "NORTHEAST",
+    "description": "Sikkim, nestled in the Eastern Himalayas, is India's least populous state and the first fully organic state. It offers breathtaking views of Kanchenjunga (world's third highest peak), ancient Buddhist monasteries, pristine glacial lakes like Tsomgo, and rich Lepcha-Bhutia culture.",
+    "bannerImage": "/images/states/sikkim.jpg",
+    "svgMapId": "IN-SK"
+  },
+  {
+    "name": "Tamil Nadu",
+    "slug": "tamil-nadu",
+    "type": "STATE",
+    "capital": "Chennai",
+    "region": "SOUTH",
+    "description": "Tamil Nadu, home to one of the world's oldest continuous civilizations, features magnificent Dravidian temple architecture at Madurai, Thanjavur, and Mahabalipuram (UNESCO). The state offers classical Bharatanatyam dance, hill stations like Ooty, and the cultural capital Madurai.",
+    "bannerImage": "/images/states/tamil-nadu.jpg",
+    "svgMapId": "IN-TN"
+  },
+  {
+    "name": "Telangana",
+    "slug": "telangana",
+    "type": "STATE",
+    "capital": "Hyderabad",
+    "region": "SOUTH",
+    "description": "Telangana, India's youngest state (formed 2014), is centered around Hyderabad with its iconic Charminar, historic Golconda Fort, and world-renowned Hyderabadi biryani. The Ramoji Film City is the world's largest film studio complex, and Warangal features stunning Kakatiya architecture.",
+    "bannerImage": "/images/states/telangana.jpg",
+    "svgMapId": "IN-TG"
+  },
+  {
+    "name": "Tripura",
+    "slug": "tripura",
+    "type": "STATE",
+    "capital": "Agartala",
+    "region": "NORTHEAST",
+    "description": "Tripura, the third-smallest state of India, features the stunning Neermahal water palace (India's only water palace), ancient Unakoti rock carvings, Ujjayanta Palace, and the unique blend of Bengali and tribal cultures. Over 60% of the state is covered in forests.",
+    "bannerImage": "/images/states/tripura.jpg",
+    "svgMapId": "IN-TR"
+  },
+  {
+    "name": "Uttar Pradesh",
+    "slug": "uttar-pradesh",
+    "type": "STATE",
+    "capital": "Lucknow",
+    "region": "NORTH",
+    "description": "Uttar Pradesh, India's most populous state, is home to the Taj Mahal (one of the Seven Wonders), the sacred cities of Varanasi and Mathura, Fatehpur Sikri, Lucknow's Nawabi heritage, and Sarnath where Buddha gave his first sermon. It has the most UNESCO sites of any Indian state.",
+    "bannerImage": "/images/states/uttar-pradesh.jpg",
+    "svgMapId": "IN-UP"
+  },
+  {
+    "name": "Uttarakhand",
+    "slug": "uttarakhand",
+    "type": "STATE",
+    "capital": "Dehradun",
+    "region": "NORTH",
+    "description": "Uttarakhand, 'Land of the Gods' (Dev Bhoomi), is home to the sacred Char Dham pilgrimage (Badrinath, Kedarnath, Gangotri, Yamunotri), Jim Corbett National Park, the yoga capital Rishikesh, and the Valley of Flowers National Park (UNESCO). It is the source of the Ganges and Yamuna rivers.",
+    "bannerImage": "/images/states/uttarakhand.jpg",
+    "svgMapId": "IN-UT"
+  },
+  {
+    "name": "West Bengal",
+    "slug": "west-bengal",
+    "type": "STATE",
+    "capital": "Kolkata",
+    "region": "EAST",
+    "description": "West Bengal spans from the Himalayas to the Bay of Bengal. It features Kolkata's colonial architecture, the Sundarbans mangrove forest (UNESCO, home to Royal Bengal Tigers), Darjeeling's tea gardens and toy train (UNESCO), Shantiniketan (Tagore's university), and vibrant Durga Puja celebrations.",
+    "bannerImage": "/images/states/west-bengal.jpg",
+    "svgMapId": "IN-WB"
+  },
+  {
+    "name": "Andaman and Nicobar Islands",
+    "slug": "andaman-and-nicobar-islands",
+    "type": "UT",
+    "capital": "Port Blair",
+    "region": "SOUTH",
+    "description": "The Andaman and Nicobar Islands, a tropical archipelago of 572 islands in the Bay of Bengal, offer pristine white-sand beaches, crystal-clear waters, world-class diving and snorkeling, the historic Cellular Jail, indigenous tribes, and rich marine biodiversity including coral reefs.",
+    "bannerImage": "/images/states/andaman-and-nicobar-islands.jpg",
+    "svgMapId": "IN-AN"
+  },
+  {
+    "name": "Chandigarh",
+    "slug": "chandigarh",
+    "type": "UT",
+    "capital": "Chandigarh",
+    "region": "NORTH",
+    "description": "Chandigarh, the first planned city of independent India, was designed by Swiss-French architect Le Corbusier. Known as 'The City Beautiful', it features the Rock Garden made from recycled waste, Sukhna Lake, the Capitol Complex (UNESCO), and its distinctive modernist architecture.",
+    "bannerImage": "/images/states/chandigarh.jpg",
+    "svgMapId": "IN-CH"
+  },
+  {
+    "name": "Dadra and Nagar Haveli and Daman and Diu",
+    "slug": "dadra-nagar-haveli-daman-diu",
+    "type": "UT",
+    "capital": "Daman",
+    "region": "WEST",
+    "description": "This merged union territory combines former Portuguese colonial enclaves with tribal forests. Daman and Diu feature Portuguese forts, churches, and beaches, while Dadra and Nagar Haveli offer dense forests, tribal culture, the Vanganga Lake, and the unique Warli art tradition.",
+    "bannerImage": "/images/states/dadra-nagar-haveli-daman-diu.jpg",
+    "svgMapId": "IN-DD"
+  },
+  {
+    "name": "Delhi",
+    "slug": "delhi",
+    "type": "UT",
+    "capital": "New Delhi",
+    "region": "NORTH",
+    "description": "Delhi, India's capital territory, is a layered city blending ancient history with modern governance. Home to the Red Fort, Qutub Minar, Humayun's Tomb (all UNESCO), India Gate, Lotus Temple, Jama Masjid, and vibrant markets of Chandni Chowk. It has served as a capital for multiple empires.",
+    "bannerImage": "/images/states/delhi.jpg",
+    "svgMapId": "IN-DL"
+  },
+  {
+    "name": "Jammu and Kashmir",
+    "slug": "jammu-and-kashmir",
+    "type": "UT",
+    "capital": "Srinagar",
+    "region": "NORTH",
+    "description": "Jammu and Kashmir, often called 'Paradise on Earth', encompasses the Kashmir Valley with its iconic Dal Lake houseboats, Mughal gardens, Gulmarg ski resort, the Vaishno Devi shrine in Jammu, ancient Buddhist monasteries, and breathtaking Himalayan landscapes.",
+    "bannerImage": "/images/states/jammu-and-kashmir.jpg",
+    "svgMapId": "IN-JK"
+  },
+  {
+    "name": "Ladakh",
+    "slug": "ladakh",
+    "type": "UT",
+    "capital": "Leh",
+    "region": "NORTH",
+    "description": "Ladakh, the 'Land of High Passes', is a high-altitude desert known for its dramatic barren beauty, ancient Buddhist monasteries, the stunning Pangong Lake, Nubra Valley, Magnetic Hill, Khardung La (one of the world's highest motorable passes), and the unique Ladakhi culture.",
+    "bannerImage": "/images/states/ladakh.jpg",
+    "svgMapId": "IN-LA"
+  },
+  {
+    "name": "Lakshadweep",
+    "slug": "lakshadweep",
+    "type": "UT",
+    "capital": "Kavaratti",
+    "region": "SOUTH",
+    "description": "Lakshadweep, India's smallest union territory, is an archipelago of 36 coral islands in the Arabian Sea. Only 10 are inhabited, offering pristine beaches, turquoise lagoons, coral reefs ideal for snorkeling and scuba diving, and a unique Maldivian-influenced island culture.",
+    "bannerImage": "/images/states/lakshadweep.jpg",
+    "svgMapId": "IN-LD"
+  },
+  {
+    "name": "Puducherry",
+    "slug": "puducherry",
+    "type": "UT",
+    "capital": "Puducherry",
+    "region": "SOUTH",
+    "description": "Puducherry (Pondicherry), a former French colonial settlement, retains its Gallic charm with mustard-yellow colonial buildings, tree-lined boulevards, French cuisine, and the Sri Aurobindo Ashram. Auroville, the international township dedicated to human unity, attracts visitors worldwide.",
+    "bannerImage": "/images/states/puducherry.jpg",
+    "svgMapId": "IN-PY"
+  }
+]

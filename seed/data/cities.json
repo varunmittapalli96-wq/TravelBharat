@@ -1,0 +1,666 @@
+[
+  {
+    "name": "Visakhapatnam",
+    "slug": "visakhapatnam",
+    "stateSlug": "andhra-pradesh",
+    "description": "Visakhapatnam (Vizag), the 'City of Destiny', is a major port city on the Bay of Bengal coast known for its beaches, Eastern Ghats backdrop, submarine museum, and the sacred Simhachalam Temple.",
+    "lat": 17.6868,
+    "lng": 83.2185
+  },
+  {
+    "name": "Tirupati",
+    "slug": "tirupati",
+    "stateSlug": "andhra-pradesh",
+    "description": "Tirupati is a major pilgrimage city in Andhra Pradesh, home to the world-famous Sri Venkateswara Temple atop the Tirumala Hills, one of the most visited religious sites in the world.",
+    "lat": 13.6288,
+    "lng": 79.4192
+  },
+  {
+    "name": "Vijayawada",
+    "slug": "vijayawada",
+    "stateSlug": "andhra-pradesh",
+    "description": "Vijayawada, on the banks of the Krishna River, is known for the Kanaka Durga Temple, Prakasam Barrage, Undavalli Caves, and as a major business center near the new capital Amaravati.",
+    "lat": 16.5062,
+    "lng": 80.648
+  },
+  {
+    "name": "Tawang",
+    "slug": "tawang",
+    "stateSlug": "arunachal-pradesh",
+    "description": "Tawang is a remote town at 10,000 ft altitude, known for the massive Tawang Monastery (second largest Buddhist monastery in the world after Lhasa), stunning mountain scenery, and as the birthplace of the 6th Dalai Lama.",
+    "lat": 27.586,
+    "lng": 91.869
+  },
+  {
+    "name": "Itanagar",
+    "slug": "itanagar",
+    "stateSlug": "arunachal-pradesh",
+    "description": "Itanagar, the capital of Arunachal Pradesh, features the ancient Ita Fort, Ganga Lake (Gekar Sinyi), the Jawaharlal Nehru State Museum, and is the gateway to exploring the state's tribal diversity.",
+    "lat": 27.0844,
+    "lng": 93.6053
+  },
+  {
+    "name": "Ziro",
+    "slug": "ziro",
+    "stateSlug": "arunachal-pradesh",
+    "description": "Ziro Valley, a UNESCO World Heritage tentative site, is known for the Apatani tribe's unique cultural practices, stunning rice paddy landscapes, pine forests, and the annual Ziro Music Festival.",
+    "lat": 27.5945,
+    "lng": 93.8311
+  },
+  {
+    "name": "Guwahati",
+    "slug": "guwahati",
+    "stateSlug": "assam",
+    "description": "Guwahati, the gateway to Northeast India, sits along the Brahmaputra River and features the Kamakhya Temple (one of the most important Shakti Peethas), Assam State Museum, and Umananda Island.",
+    "lat": 26.1445,
+    "lng": 91.7362
+  },
+  {
+    "name": "Jorhat",
+    "slug": "jorhat",
+    "stateSlug": "assam",
+    "description": "Jorhat, the 'Tea Capital of the World', is surrounded by lush tea estates and serves as the gateway to Majuli, the world's largest river island. It preserves Ahom-era historical sites.",
+    "lat": 26.7509,
+    "lng": 94.2037
+  },
+  {
+    "name": "Kaziranga",
+    "slug": "kaziranga",
+    "stateSlug": "assam",
+    "description": "Kaziranga area in the Golaghat and Nagaon districts hosts the famous Kaziranga National Park, a UNESCO World Heritage Site and the world's largest habitat of the Indian one-horned rhinoceros.",
+    "lat": 26.5775,
+    "lng": 93.1711
+  },
+  {
+    "name": "Bodh Gaya",
+    "slug": "bodh-gaya",
+    "stateSlug": "bihar",
+    "description": "Bodh Gaya is one of the most sacred Buddhist sites in the world — the place where Siddhartha Gautama attained enlightenment under the Bodhi Tree. The Mahabodhi Temple is a UNESCO World Heritage Site.",
+    "lat": 24.6961,
+    "lng": 84.9911
+  },
+  {
+    "name": "Patna",
+    "slug": "patna",
+    "stateSlug": "bihar",
+    "description": "Patna, one of the oldest continuously inhabited cities in the world (ancient Pataliputra), features Takht Sri Patna Sahib, Patna Museum, Gandhi Maidan, and the ruins of Kumhrar.",
+    "lat": 25.6093,
+    "lng": 85.1376
+  },
+  {
+    "name": "Rajgir",
+    "slug": "rajgir",
+    "stateSlug": "bihar",
+    "description": "Rajgir (ancient Rajagriha) was the first capital of the Magadha kingdom and an important site in Buddhist and Jain history. It features hot springs, Vulture Peak, Nalanda ruins nearby, and Japanese Peace Pagoda.",
+    "lat": 25.0283,
+    "lng": 85.4229
+  },
+  {
+    "name": "Raipur",
+    "slug": "raipur",
+    "stateSlug": "chhattisgarh",
+    "description": "Raipur, the capital of Chhattisgarh, serves as the gateway to the state's tribal culture and natural attractions. It features the Mahant Ghasidas Memorial Museum, Marine Drive, and Nandan Van Zoo.",
+    "lat": 21.2514,
+    "lng": 81.6296
+  },
+  {
+    "name": "Jagdalpur",
+    "slug": "jagdalpur",
+    "stateSlug": "chhattisgarh",
+    "description": "Jagdalpur is the gateway to the Bastar region, known for Chitrakote Falls, Tirathgarh Falls, Kanger Valley National Park with its limestone caves, and the rich tribal heritage of the Bastar Dussehra festival.",
+    "lat": 19.0786,
+    "lng": 82.008
+  },
+  {
+    "name": "Bilaspur",
+    "slug": "bilaspur",
+    "stateSlug": "chhattisgarh",
+    "description": "Bilaspur is a major commercial hub of Chhattisgarh, known for Ratanpur's ancient temples, the Kanan Pendari Zoo, and proximity to Achanakmar Wildlife Sanctuary in the Amarkantak Biosphere Reserve.",
+    "lat": 22.0797,
+    "lng": 82.1391
+  },
+  {
+    "name": "Panaji",
+    "slug": "panaji",
+    "stateSlug": "goa",
+    "description": "Panaji (Panjim), the capital of Goa, features the charming Latin Quarter of Fontainhas with its colorful Portuguese colonial houses, Our Lady of the Immaculate Conception Church, and the Mandovi River promenade.",
+    "lat": 15.4909,
+    "lng": 73.8278
+  },
+  {
+    "name": "Margao",
+    "slug": "margao",
+    "stateSlug": "goa",
+    "description": "Margao, the commercial capital of South Goa, is the gateway to South Goa's quieter beaches like Colva and Palolem. It features colonial-era mansions, the Margao Municipal Garden, and the famous Margao Market.",
+    "lat": 15.2832,
+    "lng": 73.9862
+  },
+  {
+    "name": "Old Goa",
+    "slug": "old-goa",
+    "stateSlug": "goa",
+    "description": "Old Goa (Velha Goa), once called the 'Rome of the East', is a UNESCO World Heritage Site featuring the Basilica of Bom Jesus (housing St. Francis Xavier's relics), Se Cathedral, and other magnificent 16th-17th century churches.",
+    "lat": 15.5036,
+    "lng": 73.9118
+  },
+  {
+    "name": "Ahmedabad",
+    "slug": "ahmedabad",
+    "stateSlug": "gujarat",
+    "description": "Ahmedabad, India's first UNESCO World Heritage City, features the Sabarmati Ashram (Mahatma Gandhi's home), intricately carved stepwells, the old walled city with pol houses, and modern architectural marvels by Le Corbusier.",
+    "lat": 23.0225,
+    "lng": 72.5714
+  },
+  {
+    "name": "Kutch",
+    "slug": "kutch",
+    "stateSlug": "gujarat",
+    "description": "Kutch (Kachchh) district is famous for the vast white salt desert of the Rann of Kutch, the Rann Utsav festival, Banni grasslands, and the exquisite embroidery and handicraft traditions of its pastoral communities.",
+    "lat": 23.7337,
+    "lng": 69.8597
+  },
+  {
+    "name": "Junagadh",
+    "slug": "junagadh",
+    "stateSlug": "gujarat",
+    "description": "Junagadh is home to the sacred mountain of Girnar with its Jain and Hindu temples, the Asiatic lions of Gir National Park, Uparkot Fort, and the Ashoka Rock Edicts dating to the 3rd century BCE.",
+    "lat": 21.5222,
+    "lng": 70.4579
+  },
+  {
+    "name": "Shimla",
+    "slug": "shimla",
+    "stateSlug": "himachal-pradesh",
+    "description": "Shimla, the 'Queen of Hill Stations' and former summer capital of British India, features colonial architecture, the Ridge promenade, Jakhoo Temple, Christ Church, and the famous Kalka-Shimla heritage railway.",
+    "lat": 31.1048,
+    "lng": 77.1734
+  },
+  {
+    "name": "Manali",
+    "slug": "manali",
+    "stateSlug": "himachal-pradesh",
+    "description": "Manali, a high-altitude Himalayan resort town, is a gateway to adventure sports, Solang Valley, Rohtang Pass, Hadimba Temple (ancient wooden temple), and the starting point for the Leh highway.",
+    "lat": 32.2396,
+    "lng": 77.1887
+  },
+  {
+    "name": "Dharamshala",
+    "slug": "dharamshala",
+    "stateSlug": "himachal-pradesh",
+    "description": "Dharamshala, seat of the Tibetan government-in-exile and home of the Dalai Lama, features McLeod Ganj, Namgyal Monastery, the HPCA Cricket Stadium (one of the highest in the world), and the Triund trek.",
+    "lat": 32.219,
+    "lng": 76.3234
+  },
+  {
+    "name": "Srinagar",
+    "slug": "srinagar",
+    "stateSlug": "jammu-and-kashmir",
+    "description": "Srinagar, the summer capital of Jammu & Kashmir, is famous for its serene Dal Lake with shikaras and houseboats, Mughal Gardens (Nishat Bagh, Shalimar Bagh), Shankaracharya Temple, and traditional Kashmiri handicrafts.",
+    "lat": 34.0837,
+    "lng": 74.7973
+  },
+  {
+    "name": "Gulmarg",
+    "slug": "gulmarg",
+    "stateSlug": "jammu-and-kashmir",
+    "description": "Gulmarg ('Meadow of Flowers') is one of Asia's premier ski destinations, featuring the world's second-highest operating gondola, lush alpine meadows, a century-old golf course, and spectacular views of the Pir Panjal range.",
+    "lat": 34.0484,
+    "lng": 74.3805
+  },
+  {
+    "name": "Pahalgam",
+    "slug": "pahalgam",
+    "stateSlug": "jammu-and-kashmir",
+    "description": "Pahalgam ('Village of Shepherds') in the Lidder Valley offers stunning alpine scenery, trout fishing, the starting point for the Amarnath Yatra pilgrimage, Betaab Valley (named after the Bollywood film), and Aru Valley.",
+    "lat": 34.0161,
+    "lng": 75.315
+  },
+  {
+    "name": "Jaipur",
+    "slug": "jaipur",
+    "stateSlug": "rajasthan",
+    "description": "Jaipur, the 'Pink City' and UNESCO World Heritage City, is the capital of Rajasthan known for the Amber Fort, City Palace, Hawa Mahal (Palace of Winds), Jantar Mantar observatory, and vibrant bazaars.",
+    "lat": 26.9124,
+    "lng": 75.7873
+  },
+  {
+    "name": "Udaipur",
+    "slug": "udaipur",
+    "stateSlug": "rajasthan",
+    "description": "Udaipur, the 'City of Lakes', is one of India's most romantic cities, featuring the Lake Palace floating on Lake Pichola, the massive City Palace complex, Jag Mandir, and the sunset views from Sajjangarh.",
+    "lat": 24.5854,
+    "lng": 73.7125
+  },
+  {
+    "name": "Jaisalmer",
+    "slug": "jaisalmer",
+    "stateSlug": "rajasthan",
+    "description": "Jaisalmer, the 'Golden City', rises from the Thar Desert with its living medieval fort (one of the few inhabited forts in the world), ornate havelis, and camel safaris into the Sam Sand Dunes.",
+    "lat": 26.9157,
+    "lng": 70.9083
+  },
+  {
+    "name": "Jodhpur",
+    "slug": "jodhpur",
+    "stateSlug": "rajasthan",
+    "description": "Jodhpur, the 'Blue City', is dominated by the imposing Mehrangarh Fort, one of India's largest forts, and features the Umaid Bhawan Palace, Jaswant Thada, Mandore Gardens, and a vibrant old city market.",
+    "lat": 26.2389,
+    "lng": 73.0243
+  },
+  {
+    "name": "Agra",
+    "slug": "agra",
+    "stateSlug": "uttar-pradesh",
+    "description": "Agra, home to the iconic Taj Mahal, is one of the most visited cities in India. It also houses Agra Fort and Fatehpur Sikri (both UNESCO World Heritage Sites), and is part of the Golden Triangle tourist circuit.",
+    "lat": 27.1767,
+    "lng": 78.0081
+  },
+  {
+    "name": "Varanasi",
+    "slug": "varanasi",
+    "stateSlug": "uttar-pradesh",
+    "description": "Varanasi (Banaras/Kashi), one of the oldest continuously inhabited cities in the world, is the holiest city in Hinduism. Situated on the banks of the Ganges, it is known for its ghats, evening aarti ceremony, and Kashi Vishwanath Temple.",
+    "lat": 25.3176,
+    "lng": 82.9739
+  },
+  {
+    "name": "Lucknow",
+    "slug": "lucknow",
+    "stateSlug": "uttar-pradesh",
+    "description": "Lucknow, the 'City of Nawabs', is the capital of Uttar Pradesh known for its refined Awadhi cuisine, the Bara Imambara, Rumi Darwaza, Chota Imambara, British Residency, and the tradition of Lucknowi chikan embroidery.",
+    "lat": 26.8467,
+    "lng": 80.9462
+  },
+  {
+    "name": "Rishikesh",
+    "slug": "rishikesh",
+    "stateSlug": "uttarakhand",
+    "description": "Rishikesh, the 'Yoga Capital of the World', sits at the foothills of the Himalayas along the sacred Ganges. Famous for the Beatles Ashram, Lakshman Jhula, river rafting, and numerous ashrams and yoga centers.",
+    "lat": 30.0869,
+    "lng": 78.2676
+  },
+  {
+    "name": "Dehradun",
+    "slug": "dehradun",
+    "stateSlug": "uttarakhand",
+    "description": "Dehradun, the capital of Uttarakhand, is a picturesque valley city at the foothills of the Himalayas. Known for the Forest Research Institute, Robber's Cave, Sahastradhara, and as a gateway to Mussoorie and the Char Dham.",
+    "lat": 30.3165,
+    "lng": 78.0322
+  },
+  {
+    "name": "Haridwar",
+    "slug": "haridwar",
+    "stateSlug": "uttarakhand",
+    "description": "Haridwar, one of the seven holiest places in Hinduism, is where the Ganges leaves the Himalayas to enter the plains. Famous for the Kumbh Mela, the Ganga Aarti at Har Ki Pauri ghat, and numerous ancient temples.",
+    "lat": 29.9457,
+    "lng": 78.1642
+  },
+  {
+    "name": "Leh",
+    "slug": "leh",
+    "stateSlug": "ladakh",
+    "description": "Leh, the capital of Ladakh at 3,524 meters altitude, is a historic town with a medieval palace, ancient Buddhist monasteries like Thiksey, Hemis, and Spituk, bustling bazaars, and spectacular mountain landscapes.",
+    "lat": 34.1526,
+    "lng": 77.5771
+  },
+  {
+    "name": "Nubra Valley",
+    "slug": "nubra-valley",
+    "stateSlug": "ladakh",
+    "description": "Nubra Valley, accessed via the Khardung La pass, features Bactrian double-humped camels, the Diskit Monastery with a 32-meter Maitreya Buddha, sand dunes at Hunder, and the scenic confluence of the Shyok and Nubra rivers.",
+    "lat": 34.685,
+    "lng": 77.575
+  },
+  {
+    "name": "Kargil",
+    "slug": "kargil",
+    "stateSlug": "ladakh",
+    "description": "Kargil, the second-largest town of Ladakh, is historically significant for the 1999 Kargil War. It serves as a gateway to Zanskar Valley, features the Kargil War Memorial, and offers stunning views of the Suru Valley.",
+    "lat": 34.5539,
+    "lng": 76.1349
+  },
+  {
+    "name": "Bengaluru",
+    "slug": "bengaluru",
+    "stateSlug": "karnataka",
+    "description": "Bengaluru (Bangalore), India's Silicon Valley, blends tech modernity with the historic Bangalore Palace, Lalbagh Botanical Garden, Cubbon Park, Vidhana Soudha, and a thriving food and nightlife scene.",
+    "lat": 12.9716,
+    "lng": 77.5946
+  },
+  {
+    "name": "Mysuru",
+    "slug": "mysuru",
+    "stateSlug": "karnataka",
+    "description": "Mysuru (Mysore), the 'City of Palaces', is famous for the magnificent Mysore Palace (lit with 97,000 bulbs during Dasara), Chamundi Hill, Brindavan Gardens, and as the center of traditional sandalwood and silk industries.",
+    "lat": 12.2958,
+    "lng": 76.6394
+  },
+  {
+    "name": "Hampi",
+    "slug": "hampi",
+    "stateSlug": "karnataka",
+    "description": "Hampi, a UNESCO World Heritage Site, contains the ruins of Vijayanagara, one of the largest and most powerful Hindu empires. The boulder-strewn landscape features over 1,600 surviving monuments, temples, and ruins.",
+    "lat": 15.335,
+    "lng": 76.46
+  },
+  {
+    "name": "Kochi",
+    "slug": "kochi",
+    "stateSlug": "kerala",
+    "description": "Kochi (Cochin), the 'Queen of the Arabian Sea', is a historic port city featuring Chinese fishing nets, Fort Kochi's colonial architecture, Jewish Synagogue in Mattancherry, the Kochi-Muziris Biennale, and Kerala's famous backwaters.",
+    "lat": 9.9312,
+    "lng": 76.2673
+  },
+  {
+    "name": "Munnar",
+    "slug": "munnar",
+    "stateSlug": "kerala",
+    "description": "Munnar, a hill station at 1,600 meters in the Western Ghats, is famous for its sprawling tea plantations, Eravikulam National Park (home of the endangered Nilgiri Tahr), Anamudi Peak (highest in South India), and misty mountain scenery.",
+    "lat": 10.0889,
+    "lng": 77.0595
+  },
+  {
+    "name": "Alleppey",
+    "slug": "alleppey",
+    "stateSlug": "kerala",
+    "description": "Alleppey (Alappuzha), called the 'Venice of the East', is the starting point for Kerala's famous backwater houseboat cruises. It features a network of canals, lagoons, Nehru Trophy Snake Boat Race, and Alappuzha Beach.",
+    "lat": 9.4981,
+    "lng": 76.3388
+  },
+  {
+    "name": "Chennai",
+    "slug": "chennai",
+    "stateSlug": "tamil-nadu",
+    "description": "Chennai, the capital of Tamil Nadu, is a major cultural hub with Marina Beach (one of the longest urban beaches), Kapaleeshwarar Temple, Fort St. George, San Thome Cathedral, and the traditional music/dance season in December.",
+    "lat": 13.0827,
+    "lng": 80.2707
+  },
+  {
+    "name": "Madurai",
+    "slug": "madurai",
+    "stateSlug": "tamil-nadu",
+    "description": "Madurai, one of the oldest continuously inhabited cities in the world, is centered around the magnificent Meenakshi Amman Temple with its 14 gopurams. Known as the 'Athens of the East', it was the capital of the Pandya dynasty.",
+    "lat": 9.9252,
+    "lng": 78.1198
+  },
+  {
+    "name": "Mahabalipuram",
+    "slug": "mahabalipuram",
+    "stateSlug": "tamil-nadu",
+    "description": "Mahabalipuram (Mamallapuram), a UNESCO World Heritage Site on the Coromandel Coast, features stunning 7th-8th century Pallava dynasty stone sculptures, Shore Temple, rock-cut cave temples, and Arjuna's Penance bas-relief.",
+    "lat": 12.6269,
+    "lng": 80.1927
+  },
+  {
+    "name": "Mumbai",
+    "slug": "mumbai",
+    "stateSlug": "maharashtra",
+    "description": "Mumbai, India's financial capital, is a vibrant megacity featuring the Gateway of India, Chhatrapati Shivaji Terminus (UNESCO), Marine Drive, Elephanta Caves (UNESCO), Bollywood studios, and the famous dabbawalas.",
+    "lat": 19.076,
+    "lng": 72.8777
+  },
+  {
+    "name": "Pune",
+    "slug": "pune",
+    "stateSlug": "maharashtra",
+    "description": "Pune, the 'Oxford of the East', blends historical significance as the seat of the Peshwa rulers with modern culture. It features Shaniwar Wada, Aga Khan Palace, Osho Ashram, and is gateway to Lonavala and Mahabaleshwar.",
+    "lat": 18.5204,
+    "lng": 73.8567
+  },
+  {
+    "name": "Aurangabad",
+    "slug": "aurangabad",
+    "stateSlug": "maharashtra",
+    "description": "Aurangabad is the gateway to the UNESCO World Heritage Ajanta and Ellora Caves. It also features the Bibi Ka Maqbara (a Taj Mahal replica), Daulatabad Fort, Panchakki, and remnants of medieval Deccan history.",
+    "lat": 19.8762,
+    "lng": 75.3433
+  },
+  {
+    "name": "Hyderabad",
+    "slug": "hyderabad",
+    "stateSlug": "telangana",
+    "description": "Hyderabad, the 'City of Pearls', features the iconic Charminar, Golconda Fort, Qutb Shahi Tombs, Hussain Sagar Lake, Ramoji Film City, and HITEC City. It is equally famous for its legendary Hyderabadi biryani.",
+    "lat": 17.385,
+    "lng": 78.4867
+  },
+  {
+    "name": "Warangal",
+    "slug": "warangal",
+    "stateSlug": "telangana",
+    "description": "Warangal, the former capital of the Kakatiya dynasty, features the Warangal Fort, Thousand Pillar Temple (Hanamkonda), Ramappa Temple (UNESCO), and the historic Bhadrakali Temple overlooking Bhadrakali Lake.",
+    "lat": 17.9784,
+    "lng": 79.5941
+  },
+  {
+    "name": "Kolkata",
+    "slug": "kolkata",
+    "stateSlug": "west-bengal",
+    "description": "Kolkata, the 'City of Joy', is the cultural capital of India. It features the Victoria Memorial, Howrah Bridge, Indian Museum, Kalighat Temple, College Street book market, and the famous Durga Puja festivities (UNESCO Intangible Heritage).",
+    "lat": 22.5726,
+    "lng": 88.3639
+  },
+  {
+    "name": "Darjeeling",
+    "slug": "darjeeling",
+    "stateSlug": "west-bengal",
+    "description": "Darjeeling, the 'Queen of the Hills', is famous for its tea plantations, the Darjeeling Himalayan Railway (UNESCO toy train), Tiger Hill sunrise views of Kanchenjunga, Batasia Loop, and the Padmaja Naidu Himalayan Zoological Park.",
+    "lat": 27.041,
+    "lng": 88.2663
+  },
+  {
+    "name": "Shantiniketan",
+    "slug": "shantiniketan",
+    "stateSlug": "west-bengal",
+    "description": "Shantiniketan, founded by Rabindranath Tagore, houses Visva-Bharati University. It is famous for its open-air classrooms, Kala Bhavana art school, Poush Mela fair, and as the birthplace of the Bengal school of art.",
+    "lat": 23.6783,
+    "lng": 87.6856
+  },
+  {
+    "name": "Amritsar",
+    "slug": "amritsar",
+    "stateSlug": "punjab",
+    "description": "Amritsar, the holiest city of Sikhism, is home to the Golden Temple (Harmandir Sahib), Jallianwala Bagh memorial, Wagah Border ceremony, Partition Museum, and the famous Amritsari street food culture.",
+    "lat": 31.634,
+    "lng": 74.8723
+  },
+  {
+    "name": "Port Blair",
+    "slug": "port-blair",
+    "stateSlug": "andaman-and-nicobar-islands",
+    "description": "Port Blair, the capital of the Andaman and Nicobar Islands, features the historic Cellular Jail (a colonial-era prison for Indian freedom fighters), Corbyn's Cove Beach, Ross Island, and is the gateway to the archipelago.",
+    "lat": 11.6234,
+    "lng": 92.7265
+  },
+  {
+    "name": "Havelock Island",
+    "slug": "havelock-island",
+    "stateSlug": "andaman-and-nicobar-islands",
+    "description": "Havelock Island (Swaraj Dweep) is home to Radhanagar Beach (repeatedly voted Asia's best beach), pristine coral reefs for diving at Elephant Beach, and lush tropical forests.",
+    "lat": 11.973,
+    "lng": 92.978
+  },
+  {
+    "name": "Gangtok",
+    "slug": "gangtok",
+    "stateSlug": "sikkim",
+    "description": "Gangtok, the capital of Sikkim, offers stunning views of Kanchenjunga, Rumtek Monastery, Enchey Monastery, Tsomgo Lake, MG Marg promenade, and serves as the base for treks and excursions across the state.",
+    "lat": 27.3389,
+    "lng": 88.6065
+  },
+  {
+    "name": "Pelling",
+    "slug": "pelling",
+    "stateSlug": "sikkim",
+    "description": "Pelling is a small town in West Sikkim offering panoramic views of Kanchenjunga, the 17th-century Pemayangtse Monastery, Rabdentse Ruins (former capital of Sikkim), Kanchenjunga Falls, and the Skywalk.",
+    "lat": 27.3,
+    "lng": 88.24
+  },
+  {
+    "name": "Shillong",
+    "slug": "shillong",
+    "stateSlug": "meghalaya",
+    "description": "Shillong, the 'Scotland of the East', is the capital of Meghalaya known for Ward's Lake, Don Bosco Museum, Shillong Peak, Lady Hydari Park, and its vibrant music culture earning it the nickname 'Rock Capital of India'.",
+    "lat": 25.5788,
+    "lng": 91.8933
+  },
+  {
+    "name": "Cherrapunji",
+    "slug": "cherrapunji",
+    "stateSlug": "meghalaya",
+    "description": "Cherrapunji (Sohra), one of the wettest places on earth, features the famous living root bridges, Nohkalikai Falls (India's tallest plunge waterfall at 340 meters), limestone caves, and panoramic views of the Bangladesh plains.",
+    "lat": 25.27,
+    "lng": 91.72
+  },
+  {
+    "name": "New Delhi",
+    "slug": "new-delhi",
+    "stateSlug": "delhi",
+    "description": "New Delhi, India's capital, features a blend of Mughal and British colonial architecture. Key landmarks include India Gate, Red Fort, Qutub Minar, Humayun's Tomb, Lotus Temple, Akshardham, and Rashtrapati Bhavan.",
+    "lat": 28.6139,
+    "lng": 77.209
+  },
+  {
+    "name": "Old Delhi",
+    "slug": "old-delhi",
+    "stateSlug": "delhi",
+    "description": "Old Delhi (Shahjahanabad), the walled city built by Mughal Emperor Shah Jahan, features the magnificent Jama Masjid, Chandni Chowk bazaar, Red Fort, and a labyrinth of narrow lanes with legendary street food.",
+    "lat": 28.6562,
+    "lng": 77.241
+  },
+  {
+    "name": "Bhubaneswar",
+    "slug": "bhubaneswar",
+    "stateSlug": "odisha",
+    "description": "Bhubaneswar, the 'Temple City of India', features over 700 temples including the Lingaraja Temple, Rajarani Temple, and Parasurameswara Temple. It is part of the Golden Triangle with Puri and Konark.",
+    "lat": 20.2961,
+    "lng": 85.8245
+  },
+  {
+    "name": "Puri",
+    "slug": "puri",
+    "stateSlug": "odisha",
+    "description": "Puri is home to the revered Jagannath Temple (one of the Char Dham) and the famous annual Rath Yatra. Its golden beach, Chilika Lake nearby, and the Sun Temple at Konark make it a major pilgrimage and tourist hub.",
+    "lat": 19.8135,
+    "lng": 85.8312
+  },
+  {
+    "name": "Konark",
+    "slug": "konark",
+    "stateSlug": "odisha",
+    "description": "Konark is home to the Sun Temple, a 13th-century UNESCO World Heritage Site shaped as a giant chariot with 24 elaborately carved stone wheels drawn by seven horses. It represents the pinnacle of Kalinga architecture.",
+    "lat": 19.8876,
+    "lng": 86.0945
+  },
+  {
+    "name": "Bhopal",
+    "slug": "bhopal",
+    "stateSlug": "madhya-pradesh",
+    "description": "Bhopal, the 'City of Lakes', is the capital of Madhya Pradesh. It combines mosques and palaces of the Nawabi era with modern culture. The state museum, Bhojtal lake, and nearby Bhimbetka and Sanchi make it a cultural hub.",
+    "lat": 23.2599,
+    "lng": 77.4126
+  },
+  {
+    "name": "Khajuraho",
+    "slug": "khajuraho",
+    "stateSlug": "madhya-pradesh",
+    "description": "Khajuraho, a UNESCO World Heritage Site, features a stunning group of Hindu and Jain temples famous for their erotic sculptures. Built by the Chandela dynasty (950–1050 CE), only 25 of the original 85 temples survive.",
+    "lat": 24.8318,
+    "lng": 79.9199
+  },
+  {
+    "name": "Gwalior",
+    "slug": "gwalior",
+    "stateSlug": "madhya-pradesh",
+    "description": "Gwalior is dominated by its magnificent hilltop fort described as 'the pearl amongst the fortresses of Hind'. It features the Man Singh Palace, Sas Bahu temples, Tansen's Tomb (legendary musician), and Jai Vilas Palace.",
+    "lat": 26.2183,
+    "lng": 78.1828
+  },
+  {
+    "name": "Imphal",
+    "slug": "imphal",
+    "stateSlug": "manipur",
+    "description": "Imphal, capital of Manipur, features the Kangla Fort, Ima Keithel (the world's largest all-women market), Shree Govindajee Temple, INA Memorial, and the Manipur State Museum preserving the state's rich history.",
+    "lat": 24.817,
+    "lng": 93.9368
+  },
+  {
+    "name": "Kohima",
+    "slug": "kohima",
+    "stateSlug": "nagaland",
+    "description": "Kohima, the capital of Nagaland, is the site of the decisive Battle of Kohima (1944) in World War II. It features the Kohima War Cemetery, Kohima State Museum, Naga Heritage Village, and views of surrounding misty hills.",
+    "lat": 25.6751,
+    "lng": 94.1086
+  },
+  {
+    "name": "Aizawl",
+    "slug": "aizawl",
+    "stateSlug": "mizoram",
+    "description": "Aizawl, the capital of Mizoram perched atop a ridge, features Durtlang Hills, Solomon's Temple, Mizoram State Museum, and offers panoramic views of the surrounding hills. It is known for its churches and vibrant Mizo culture.",
+    "lat": 23.7271,
+    "lng": 92.7176
+  },
+  {
+    "name": "Agartala",
+    "slug": "agartala",
+    "stateSlug": "tripura",
+    "description": "Agartala, the capital of Tripura, features the magnificent Ujjayanta Palace, Neermahal water palace, Unakoti rock carvings, Sepahijala Wildlife Sanctuary, and the Indo-Bangladesh border crossing at Akhaura.",
+    "lat": 23.8315,
+    "lng": 91.2868
+  },
+  {
+    "name": "Ranchi",
+    "slug": "ranchi",
+    "stateSlug": "jharkhand",
+    "description": "Ranchi, the 'City of Waterfalls' and capital of Jharkhand, is surrounded by natural beauty including Hundru Falls, Jonha Falls, Dasam Falls, Tagore Hill, and Rock Garden. It serves as a gateway to Jharkhand's tribal areas.",
+    "lat": 23.3441,
+    "lng": 85.3096
+  },
+  {
+    "name": "Kurukshetra",
+    "slug": "kurukshetra",
+    "stateSlug": "haryana",
+    "description": "Kurukshetra, the sacred city where the Mahabharata war was fought, features Brahma Sarovar, Jyotisar (where Krishna delivered the Bhagavad Gita), Kurukshetra Panorama and Science Centre, and the Sheikh Chehli's Tomb.",
+    "lat": 29.9695,
+    "lng": 76.8783
+  },
+  {
+    "name": "Kavaratti",
+    "slug": "kavaratti",
+    "stateSlug": "lakshadweep",
+    "description": "Kavaratti, the capital of Lakshadweep, features a beautiful lagoon, marine aquarium, Ujra Mosque, water sports center, and pristine coral reef surrounding the island ideal for snorkeling and glass-bottom boat rides.",
+    "lat": 10.5593,
+    "lng": 72.6358
+  },
+  {
+    "name": "Puducherry Town",
+    "slug": "puducherry-town",
+    "stateSlug": "puducherry",
+    "description": "Puducherry Town (Pondicherry) features the French Quarter with colorful colonial buildings, Rock Beach promenade, Sri Aurobindo Ashram, Auroville township, Basilica of the Sacred Heart, and seaside cafes.",
+    "lat": 11.9416,
+    "lng": 79.8083
+  },
+  {
+    "name": "Daman",
+    "slug": "daman",
+    "stateSlug": "dadra-nagar-haveli-daman-diu",
+    "description": "Daman, a former Portuguese colony, features Moti Daman Fort, Church of Bom Jesus, Jampore Beach, Devka Beach, and the serene Daman Ganga riverfront with Portuguese-era churches and colonial architecture.",
+    "lat": 20.3974,
+    "lng": 72.8328
+  },
+  {
+    "name": "Chandigarh",
+    "slug": "chandigarh",
+    "stateSlug": "chandigarh",
+    "description": "Chandigarh, the joint capital of Punjab and Haryana and a Union Territory, is India's first planned modern city known for its Le Corbusier architecture, clean wide avenues, Sukhna Lake, and Nek Chand's iconic Rock Garden.",
+    "lat": 30.7333,
+    "lng": 76.7794
+  },
+  {
+    "name": "Chamoli",
+    "slug": "chamoli",
+    "stateSlug": "uttarakhand",
+    "description": "Chamoli is a picturesque Himalayan district in Uttarakhand, home to the UNESCO World Heritage Valley of Flowers National Park, Nanda Devi biosphere reserve, Badrinath Temple, and Hemkund Sahib.",
+    "lat": 30.4,
+    "lng": 79.33
+  }
+]

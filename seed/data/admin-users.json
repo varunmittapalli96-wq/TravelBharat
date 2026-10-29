@@ -1,0 +1,12 @@
+[
+  {
+    "email": "admin@travelbharat.in",
+    "password": "Admin@TravelBharat2024!",
+    "role": "ADMIN"
+  },
+  {
+    "email": "editor@travelbharat.in",
+    "password": "Editor@TravelBharat2024!",
+    "role": "EDITOR"
+  }
+]
